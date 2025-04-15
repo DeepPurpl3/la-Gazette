@@ -5,13 +5,16 @@ body {
         background-color: red;
         color: white;
         text-decoration: none;
+        padding: 3px 3px;
     }
-    p{
+    p {
         color: gray;
     }
-
+    .liste {
+        list-style: none;
+    }
+    
 }
-
 
 main {
     .wrapper {
@@ -118,6 +121,8 @@ main {
     }
 
     .info {
+        margin: auto;
+        width: 95%;
         display: grid;
         grid-template-columns: repeat(1,1fr);
 
@@ -145,6 +150,7 @@ main {
             translate: -50% -50%;
         }
     }
+
 
     // medium
     @media screen and (min-width:576px) and (max-width:960px) {
@@ -226,12 +232,69 @@ main {
 }
 
 footer {
-    
+    height: 600px;
+    margin-top: 70px;
+    background-image: url(/img/bg-img/4.jpg);
+    // background-color: grey  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    display: grid;
 
-        // medium
-        @media screen and (min-width:576px) and (max-width:960px) {}
-        // large
-        @media screen and (min-width:960px) {}
+
+
+    .wrapper {
+            background-color: grey  ;
+
+        h2 {
+            margin-top: 50px;
+            color: white;
+            margin-left: 2%;
+        }
+        
+    }
+    ul{
+        margin-top: 50px;
+        margin-right: 0;
+        list-style: none;
+        color: white;
+        a{
+            color: white;
+        }
+        h2 {
+            color: white;
+
+        }
+        
+    }
+    
+    .copyright {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+
+    // medium
+    @media screen and (min-width:576px) and (max-width:960px) {
+        footer{
+            .wrapper {
+                display: grid;
+                grid-template-columns: repeat(4,2fr)
+            }
+        }
+    }
+    // large
+    @media screen and (min-width:960px) {
+        footer {
+            display: flex;
+        }
+    }
 
 }
 
