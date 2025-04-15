@@ -132,6 +132,20 @@ main {
 
     }
 
+    .endo {
+        display: grid;
+        width: 90%;
+        margin-top: 50px;
+        margin-left: 5%;
+        position: relative;
+        .play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+        }
+    }
+
     // medium
     @media screen and (min-width:576px) and (max-width:960px) {
         .bandeau {
@@ -155,7 +169,12 @@ main {
             }
     
         }
-        
+        .endo{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 2rem;
+
+        }
     }
     // large
     @media screen and (min-width:960px) {
@@ -183,6 +202,7 @@ main {
             
         }
         .info {
+            margin: 0 3%;
             display: grid;
             grid-template-columns: repeat(6,1fr);
     
@@ -195,6 +215,12 @@ main {
                 margin: 0 20px;
             }
     
+        }
+        .endo{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 1rem;
+
         }
     }
 }
