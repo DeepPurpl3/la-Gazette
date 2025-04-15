@@ -1,0 +1,89 @@
+header{
+    .container {
+        margin-top: 50px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        gap: 5%;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        svg{
+            margin-right: 80px;
+        }
+        .navbar{
+            
+            li.red{
+                color: red;
+            }
+            
+        }
+        
+        .menu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3px;
+            border-radius: 10px;
+            width: 160px;
+        }
+        
+        .burger {
+            margin-top: 10px;
+            width: 60px;
+            height: 40px;
+            background-color: red;
+            border: 1px solid rgba(0, 0, 0,0.1);
+            border-radius: 5px;
+            
+            span {
+                padding: 1px;
+                display: block;
+                height: 3px;
+                background: #fcfcfc;
+                margin: 4px auto;
+                width: 50%;
+            }
+            
+            
+        }
+        
+        .ninja  {
+            display: none;
+        }
+        
+        ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+        }   
+        
+        // medium
+        @media screen and (min-width:576px) and (max-width:960px) {
+            .bandeau {
+                grid-column: 2fr;
+                .ninja {
+                    display: block;
+                    grid-column: 1fr;
+                }
+            }
+        }
+        // large
+        @media screen and (min-width:960px) {
+            .mobile {
+                display: none;
+            }
+            .ninja {
+                display: block;
+            }
+            
+        }
+    }    
+}
+
