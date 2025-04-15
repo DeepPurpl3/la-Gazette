@@ -6,13 +6,20 @@ body {
         color: white;
         text-decoration: none;
     }
+    p{
+        color: gray;
+    }
 
 }
 
 
 main {
-    
+    .wrapper {
+        display: grid;
+
+    }
     .bandeau {
+        
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 50px;
@@ -33,8 +40,15 @@ main {
         
     }
 
-    .wrapper {
+    .article{
         margin: 0 5% 0 5%;
+        .card-text {
+            margin-top: 30px;
+        }
+        h3 {
+            margin: 50px auto 50px;
+            color: gray;
+        }
         
         .fleche{
             margin-top: 30px;
@@ -64,7 +78,32 @@ main {
         
     }
 
+    .breaking{
+        margin-left: 5% ;
+        margin-right: 5%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        gap: 30px;
+        display: grid;
+        figure {
+            position: relative;
+            .txt {
+                position: absolute;
+            }
+            figcaption {
+                position: absolute;
+                bottom: 5%;
+                margin: 0 10% auto ;
+                color: white;
+            }
+        }
 
+        h2 {
+            color: 
+            rgb(33, 37, 41);
+        }
+        
+    }
         // medium
         @media screen and (min-width:576px) and (max-width:960px) {
             .bandeau {
@@ -74,9 +113,14 @@ main {
                     display: block;
                 }
             }
+            
         }
         // large
         @media screen and (min-width:960px) {
+            .wrapper{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+            }
             .bandeau {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -86,6 +130,15 @@ main {
                 .medium {
                     display: none;
                 }
+            }
+            .article {
+                grid-column: span 2;
+            }
+            .breaking {
+                grid-column: 1fr;
+                display:flex;
+                flex-direction: column;
+                
             }
         }
 }
