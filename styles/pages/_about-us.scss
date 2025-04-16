@@ -1,5 +1,24 @@
 body {
     text-transform: capitalize;
-    
+    .conteneur {
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+    }
+    .coord {
+        grid-column: span 8;
+        grid-row: span 2;
+    }
+    .address {
+        grid-column: span 4;
+    }
+    .phone {
+        grid-column: span 4;
+    }
+}
+footer{
+    margin-top: 0;
+    .wrapp{
+        // margin-bottom: 10%;
+    }
 }
 
