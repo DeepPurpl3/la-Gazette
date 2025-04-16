@@ -23,10 +23,16 @@ header{
             li.red{
                 color: red;
             }
-        }
-        .navbar li:hover{
-            transform: scale(2rem);
-            transition: 0.2 ease-in-out 0.5;
+            .navbar li::before {
+                content: '';
+                display: block;
+                transform: scale(0);
+                transition: transform 0.2s ease-in-out;
+            }
+            
+            .navbar li:hover::before {
+                transform: scale(10);
+            }
         }
         .menu{
             display: flex;
