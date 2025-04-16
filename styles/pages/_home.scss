@@ -13,12 +13,10 @@ body {
     .liste {
         list-style: none;
     }
-    
 }
 main {
     .wrapper {
         display: grid;
-
     }
     .bandeau {
         display: grid;
@@ -41,7 +39,6 @@ main {
                 }
             }
         }
-        
     }
     .article{
         margin-left: 5%;
@@ -53,7 +50,6 @@ main {
             gap: 1rem;
             position: relative;
             left: 82%;
-        
         }
         .card-text {
             margin-top: 30px;
@@ -62,13 +58,11 @@ main {
             margin: 50px auto 50px;
             color: gray;
         }
-        
         .fleche{
             margin-top: 30px;
             width: 350px;
             display: flex;
             .btn {
-                
                 text-decoration: none;
                 color: black;
                 padding: 8px;
@@ -81,7 +75,6 @@ main {
                 padding: 10px;
                 border-bottom: none;
             }
-           
         }
         .carré {
             display: flex;
@@ -89,18 +82,13 @@ main {
             justify-content: center;
             align-items: center;
             margin-top: 15px;
-            
             figure {
                 height: 100%;
             }
-                
-            
             .coms {
                 color: black;
-                
             }
         }
-
     }
     .breaking{
         margin-left: 5% ;
@@ -133,7 +121,6 @@ main {
             color: 
             rgb(33, 37, 41);
         }
-        
     }
     .info {
         margin: auto;
@@ -160,9 +147,7 @@ main {
             border-top: 1px solid rgb(171, 171, 171);
             margin-top: 1%;
             padding: 5px 2px;
-
         }
-
     }
     .endo {
         display: grid;
@@ -217,7 +202,6 @@ main {
             display: grid;
             grid-template-columns: repeat(4,1fr);
             gap: 2rem;
-
         }
     }
     // large

@@ -1,5 +1,5 @@
 main {
-    font-size: medium;
+    // font-size: medium;
     
     .bendo {
         height: 120px;
@@ -25,14 +25,16 @@ main {
         align-items: end;
         .para {
             grid-column: span 4;
-            display: flex;
-            .lui { 
-                grid-column: span 2;
-            }
+        }
+        .lui { 
+            columns: 2;
+            grid-column: span 4;
         }
         .elle {
             grid-column: span 4;
             display: flex;
+            gap: 1rem;
+            justify-content: space-around;
         }
         
         h2 {
