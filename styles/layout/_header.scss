@@ -1,6 +1,9 @@
 header{
     .container {
         margin-top: 50px;
+        position: relative; 
+        left: 10%;
+        border: none;
     }
     nav {
         display: flex;
@@ -20,9 +23,11 @@ header{
             li.red{
                 color: red;
             }
-            
         }
-        
+        .navbar li:hover{
+            transform: scale(2rem);
+            transition: 0.2 ease-in-out 0.5;
+        }
         .menu{
             display: flex;
             align-items: center;
