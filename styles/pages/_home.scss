@@ -15,18 +15,15 @@ body {
     }
     
 }
-
 main {
     .wrapper {
         display: grid;
 
     }
     .bandeau {
-        
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 50px;
-    
         .ninja {
             display: none;
         }
@@ -38,11 +35,14 @@ main {
             .txt {
                 position: absolute;
                 top: 0;
+                h2 {
+                    color: white;
+                    font-size:large;
+                }
             }
         }
         
     }
-
     .article{
         margin-left: 5%;
         // width: 80%;
@@ -102,7 +102,6 @@ main {
         }
 
     }
-
     .breaking{
         margin-left: 5% ;
         margin-right: 5%;
@@ -129,7 +128,6 @@ main {
         }
         
     }
-
     .info {
         margin: auto;
         width: 95%;
@@ -144,7 +142,7 @@ main {
         }
         .small{
             grid-column: span 1;
-            margin: 20px;
+            margin: 0 10px;
         }  
         .boite {
             text-decoration: none;
@@ -152,14 +150,13 @@ main {
             padding: 3px;
         }
         .marger h3{
-            border-top: 1px solid gray;
+            border-top: 1px solid rgb(171, 171, 171);
             margin-top: 1%;
             padding: 5px 2px;
 
         }
 
     }
-
     .endo {
         display: grid;
         width: 90%;
@@ -173,8 +170,6 @@ main {
             translate: -50% -50%;
         }
     }
-
-
     // medium
     @media screen and (min-width:576px) and (max-width:960px) {
         .bandeau {
@@ -194,7 +189,7 @@ main {
             }
             .small{
                 grid-column: span 1;
-                margin: 0 20px;
+                margin: 0 10px;
             }
     
         }
@@ -241,7 +236,7 @@ main {
             }
             .small{
                 grid-column: span 1;
-                margin: 0 20px;
+                margin: 0 10px;
             }
     
         }

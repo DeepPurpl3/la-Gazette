@@ -1,24 +1,18 @@
 footer {
     height: 600px;
     margin-top: 70px;
-    background-image: url(/img/bg-img/4.jpg);
-    // background-color: grey  ;
+    background-image: url(/img/bg-img/4.jpg); 
     background-position: center;
     background-repeat: no-repeat;
     object-fit: fill;
     display: grid;
-
-
-
     .wrapper {
-            background-color: grey  ;
-
+            // background-color: grey ;
         h2 {
             margin-top: 50px;
             color: white;
             margin-left: 2%;
         }
-        
     }
     ul{
         margin-top: 50px;
@@ -34,7 +28,6 @@ footer {
         }
         
     }
-    
     .copyright {
         text-align: center;
         display: flex;
@@ -46,7 +39,6 @@ footer {
             color: #000;
         }
     }
-
     // medium
     @media screen and (min-width:576px) and (max-width:960px) {
         footer{
@@ -60,6 +52,7 @@ footer {
     @media screen and (min-width:960px) {
         footer {
             display: flex;
+            flex-wrap: nowrap;
         }
     }
 
