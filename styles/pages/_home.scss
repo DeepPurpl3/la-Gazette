@@ -109,6 +109,10 @@ main {
         margin-bottom: 50px;
         gap: 30px;
         display: grid;
+        .mini {
+            display: flex;
+            aspect-ratio: 1/1;
+        }
         figure {
             position: relative;
             .txt {
@@ -121,7 +125,6 @@ main {
                 color: white;
             }
         }
-
         h2 {
             color: 
             rgb(33, 37, 41);
